@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+        integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .child1 {
+            font-size: 1.2rem;
+            color: teal;
+        }
+
+        .child2 {
+            font-size: 1.3rem;
+            color: violet;
+        }
+
+        .black {
+            border: 2px solid salmon;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: slateblue;
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn1" id="btn1">Click me for Html Manipulation</button>
+
+    <div class="parent">
+        <p class="child1">child 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nihil voluptatum
+            repellendus architecto natus. Autem expedita rem veniam dolore numquam esse, illo nesciunt quis laboriosam
+            ex libero cumque facere sequi!</p>
+        <span class="child2">Child 2 Lorem ipsum dolor sit amet.</span>
+    </div>
+
+
+    <label for="userName">User Name: </label>
+    <input type="text" id="userName">
+    <button id="append">Add Append</button>
+    <button id="prepend">Add Prepend</button>
+    <button id="after">Add After</button>
+    <button id="before">Add before</button>
+    <button id="empty">Delete All</button>
+    <button id="remove">Remove All</button>
+    <button id="addClass">Add Class</button>
+    <button id="removeClass">Remove Class</button>
+    <button id="toggleClass">Toggle Class</button>
+    <button id="cssValue">Get CSS value</button>
+
+    <!-- before element -->
+    <ul id="add">
+        <!-- prepend child -->
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+        <!-- append child -->
+    </ul>
+    <!-- after element -->
+
+
+
+    <div class="box"></div>
+
+
+
+
+
+
+
+    <script>
+
+        $(document).ready(() => {
+
+
+            // get content of child elements of any parent
+
+            // $('#btn1').click(()=>{
+            //    let a =  $('.parent').text();
+            //    document.write(a)
+            //    alert(a)
+            // })
+
+
+            // get html of child elements of any parent
+
+            // $('#btn1').click(()=>{
+            //    let a =  $('.parent').html();
+            //    alert(a)
+            // })
+
+            // set html of child elements of any parent
+
+            // $('#btn1').click(()=>{
+            //    let a =  $('.parent').html('<h1>lorem ipsum</h1>');
+            // })
+
+
+            // getting value of input feild
+
+
+            // $('#btn1').click(() => {
+            //     let a = $('#userName').val();
+
+            //     console.log(a)
+            // })
+
+
+            // setting value of input feild
+
+
+            // $('#btn1').click(() => {
+            // $('#userName').val('hello world');
+
+            // })
+
+
+            // getting attribute of elements
+
+
+            // $('#btn1').click(() => {
+            //     let a = $('#userName').attr('type');
+
+            //     console.log(a)
+            // })
+
+
+            // setting attribute of elements
+
+            // $('#btn1').click(() => {
+            //     let a = $('#userName').attr('type', 'password');
+
+            //     console.log(a)
+            // })
+
+
+            // $('#btn1').click(() => {
+            //     let a = $('#userName').attr({
+            //         'type': 'password',
+            //         'class': 'black'
+            //         });
+
+            //     console.log(a)
+            // })
+
+
+            // $('#append').click(()=>{
+            //    let a = $('#userName').val();
+            //     $('#add').append(`<li>${a}</li>`)
+            // })
+
+
+            // $('#prepend').click(()=>{
+            //    let a = $('#userName').val();
+            //     $('#add').prepend(`<li>${a}</li>`)
+            // })
+
+            // $('#after').click(()=>{
+            //    let a = $('#userName').val();
+            //     $('#add').after(`<div>${a}</div>`)
+            // })
+
+            // $('#before').click(()=>{
+            //    let a = $('#userName').val();
+            //     $('#add').before(`<div>${a}</div>`)
+            // })
+
+            // $('#empty').click(()=>{
+            //    let a = $('#userName').val();
+            //     $('#add').empty()
+            // })
+
+            // $('#remove').click(()=>{
+            //    let a = $('#userName').val();
+            //     $('#add').remove()
+            // })
+
+            // $('#addClass').click(() => {
+
+            //     $('.box').addClass('circle')
+            // })
+
+            // $('#removeClass').click(() => {
+
+            //     $('.box').removeClass('circle')
+            // })
+
+            // $('#toggleClass').click(() => {
+
+            //     $('.box').toggleClass('circle')
+            // })
+
+            // $('#cssValue').click(() => {
+
+            //     let a = $('.box').css('background-color');
+            //     console.log(a)
+            // })
+
+
+            // $('#cssValue').click(() => {
+
+            //     let a = $('.box').height();
+            //     console.log(a)
+            // })
+
+
+
+
+
+
+
+
+        })
+
+    </script>
+
+
+
+</body>
+
+</html>

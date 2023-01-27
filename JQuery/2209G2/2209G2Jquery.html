@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- <script src="jquery-3.6.3.min.js"></script> -->
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- <div class="box">
+        <img src="./1.jpg" id="img" alt="" srcset="">
+    </div> -->
+
+
+    <!-- <div class="box"></div> -->
+
+    <!-- <button class="btn1" id="btn1">Height Change</button> -->
+    <!-- <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Toggle</button> -->
+
+
+
+
+
+
+    <label for="userName">User Name: </label>
+    <input type="text" id="userName">
+    <button id="append">Add Append</button>
+    <button id="prepend">Add Prepend</button>
+    <button id="after">Add After</button>
+    <button id="before">Add before</button>
+    <button id="empty">Delete All</button>
+    <button id="remove">Remove All</button>
+
+
+
+
+    <ul id="add">
+        <!-- prepend -->
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+        <!-- append -->
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        $(document).ready(() => {
+
+
+            // $('#btn1').click(() => {
+
+            //     $('.box').css('height', '200px')
+            // })
+
+
+            // $('#btn1').click(() => {
+
+            //     $('.box').hide(2000)
+            // })
+
+            // $('#btn2').click(() => {
+
+            //     $('.box').show(2000)
+            // })
+
+
+
+            // $('#btn3').click(() => {
+
+            //     $('.box').toggle(2000)
+            // })
+
+
+            // $('#btn1').click(() => {
+
+            //     $('.box').fadeOut(2000)
+            // })
+
+            // $('#btn2').click(() => {
+
+            //     $('.box').fadeIn(2000)
+            // })
+
+
+
+            // $('#btn3').click(() => {
+
+            //     $('#img').fadeToggle(2000)
+            // })
+
+
+            // $('#btn3').click((e) => {
+            //     $('.box').fadeTo(2000, 0.1)
+            //     console.log(1)
+            // })
+
+
+
+
+            // $('#btn3').dblclick((e) => {
+            //     $('.box').fadeTo(2000, 0.1)
+            //     console.log(1)
+            // })
+
+
+            // $('#btn3').mouseenter((e) => {
+            //     $('.box').fadeTo(2000, 0.1)
+            //     console.log(1)
+            // })
+
+
+            // $('#btn3').mouseleave((e) => {
+            //     $('.box').fadeTo(2000, 0.1)
+            //     console.log(1)
+            // })
+
+            // $('#btn3').mousedown((e) => {
+            //     $('.box').fadeTo(2000, 0.1)
+            //     console.log(1)
+            // })
+            // $('#btn3').mouseup((e) => {
+            //     $('.box').fadeTo(2000, 1)
+            //     console.log(1)
+            // })
+
+
+
+            // $('#btn3').hover((e) => {
+            //     $('.box').fadeTo(2000, 0.1)
+            //     console.log(1)
+            // })
+
+
+            // $('#btn3').on({
+            //     mouseenter: (e)=>{
+            //         $('.box').hide(1000)
+            //         console.log(e)
+            //     },
+            //     mouseleave: (e)=>{
+            //         $('.box').show(1000)
+            //         console.log(e)
+            //     }
+            // })
+
+
+
+
+            // $('#btn1').click((e) => {
+            //     $('.box').slideUp(2000)
+            //     console.log(1)
+            // })
+
+            // $('#btn2').click((e) => {
+            //     $('.box').slideDown(2000)
+            //     console.log(1)
+            // })
+
+            // $('#btn3').click((e) => {
+            //     $('.box').slideToggle(2000)
+            //     console.log(1)
+            // })
+
+
+            // $('#btn3').click((e) => {
+            //     $('.box').animate({
+            //         'font-size': '34px',
+            //         'width': '300px'
+            //     },4000)
+            //     console.log(1)
+            // })
+
+            // $('#btn2').click((e) => {
+            //     $('.box').stop()
+            //     console.log(1)
+            // })
+
+
+
+
+            // $('#btn3').click((e) => {
+            //     $('.box').hide(2000, ()=>{
+            //         alert('your box is hidden')
+            //     })
+            //     console.log(1)
+            // })
+
+
+
+            // chaining of multiple methods
+
+
+            // $('#btn3').click((e) => {
+            //     $('.box').css('background','red').fadeTo(3000, 0.5).slideUp(2000)
+            //     console.log(1)
+            // })
+
+
+
+
+            // DOM manipulation in css
+
+            $('#append').click(()=>{
+               let a = $('#userName').val()
+                $('#add').prepend(`<li>${a}</li>`)
+            })
+
+
+
+
+
+
+        })
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

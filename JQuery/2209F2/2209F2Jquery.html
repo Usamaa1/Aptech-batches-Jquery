@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <style>
+        .box {
+            background-color: violet;
+            width: 100px;
+            height: 100px;
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+
+        .purple {
+            background-color: slateblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- <div class="box"></div>
+
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Toggle</button>
+    <button id="anim">Animation</button>
+    <button id="stop">Stop</button> -->
+
+
+
+
+    <div class="box"></div>
+
+
+
+
+
+
+    <label for="userName">User Name: </label>
+    <input type="text" id="userName">
+    <button id="append">Add Append</button>
+    <button id="prepend">Add Prepend</button>
+    <button id="after">Add After</button>
+    <button id="before">Add before</button>
+    <button id="empty">Delete All</button>
+    <button id="remove">Remove All</button>
+    <button id="addClass">Add Class</button>
+    <button id="removeClass">Remove Class</button>
+    <button id="toggleClass">Toggle Class</button>
+    <button id="cssValue">Get CSS value</button>
+
+    <!-- before element -->
+    <ul id="add">
+        <!-- prepend child -->
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+        <!-- append child -->
+    </ul>
+    <!-- after element -->
+
+
+
+    <script>
+
+
+        $(document).ready(() => {
+
+
+
+            // $('#btn1').click(() => {
+            //     $('#btn1').hide(1000);
+            // })
+            // $('#btn2').click(() => {
+            //     $('.box').show('slow');
+            // })
+
+
+            // $('#btn3').click(()=>{
+            //     $('.box').toggle()
+            // })
+
+
+            // $('#btn1').mousedown(()=>{
+            //     $('.box').css({
+            //         'background':'red',
+            //         'border': '2px solid #333'
+            //     })
+            // })
+
+
+
+            // $('#btn1').mouseenter(()=>{
+            //     $('.box').css({
+            //         'background':'red',
+            //         'border': '2px solid #333'
+            //     })
+            // })
+
+            // $('#btn1').mouseleave(()=>{
+            //     $('.box').css({
+            //         'background':'violet',
+            //         'width': '200px'
+            //     })
+            // })
+
+            // $('#btn1').dblclick(()=>{
+            //     $('.box').css({
+            //         'background':'violet',
+            //         'width': '200px'
+            //     })
+            // })
+
+
+            // $('#btn1').on({
+            //     mouseenter: () => {
+            //         $('.box').hide(1000);
+
+            //     },
+            //     mouseleave: ()=>{
+            //         $('.box').css('background','red');
+
+            //     }
+
+            // })
+
+            // $('#btn1').click(() => {
+            //     $('.box').fadeOut(1000);
+            // })
+
+
+            // $('#btn2').click(() => {
+            //     $('.box').fadeIn(1000);
+            // })
+
+            // $('#btn2').click(() => {
+            //     $('.box').fadeTo(1000, 0.3);
+            // })
+
+            // $('#btn2').click(() => {
+            //     $('.box').fadeToggle(1000);
+            // })
+
+            // $('#btn1').click(() => {
+            //     $('.box').slideUp(1000);
+            // })
+
+            // $('#btn2').click(() => {
+            //     $('.box').slideDown(1000);
+            // })
+            // $('#btn2').click(() => {
+            //     $('.box').slideToggle(1000);
+            // })
+
+
+            // animate
+
+
+
+            // $('#anim').click(() => {
+
+            //     $('.box').animate({
+            //         'width': '300px',
+            //         'height': '400px'
+
+            //     },5000)
+
+            // })
+
+            // $('#stop').click(() => {
+
+            //     $('.box').stop()
+
+            // })
+
+
+
+            // callback function
+
+
+            // $('#btn1').click(()=>{
+            //     $('.box').hide(3000,()=>{
+            //         alert('your box is hidden')
+            //     })
+            // }) 
+
+            // chaining
+
+            // $('#btn1').click(()=>{
+            //     $('.box').css('background', 'red').slideUp(2000).slideDown(4000)
+            // }) 
+
+
+
+
+            // $('#append').click(() => {
+            //     let a = $('#userName').val()
+            //     $('#add').append(`<li>${a}</li>`)
+            // })
+
+            // $('#prepend').click(() => {
+            //     let a = $('#userName').val()
+            //     $('#add').prepend(`<li>${a}</li>`)
+            // })
+
+
+            // $('#after').click(() => {
+            //     let a = $('#userName').val()
+            //     $('#add').after(`${a}`)
+            // })
+
+            // $('#before').click(() => {
+            //     let a = $('#userName').val()
+            //     $('#add').before(`<h1>${a}</h1>`)
+            // })
+
+
+            //  $('#remove').click(() => {
+
+            //     $('#add').remove()
+            // })
+
+
+            // $('#empty').click(() => {
+
+            //     $('#add').empty()
+            // })
+
+
+            // add class
+
+            // $('#addClass').click(() => {
+
+            //     $('.box').addClass('circle purple')
+            // })
+
+            // $('#removeClass').click(() => {
+
+            //     $('.box').removeClass('circle purple')
+            // })
+
+
+            // $('#toggleClass').click(() => {
+
+            //     $('.box').toggleClass('circle purple')
+            // })
+
+
+            $('#cssValue').click(() => {
+
+               let a =  $('.box')
+            //    let a =  $('.box').height()
+            //    let a =  $('.box').width()
+
+               console.log(a)
+            })
+
+
+
+
+        })
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

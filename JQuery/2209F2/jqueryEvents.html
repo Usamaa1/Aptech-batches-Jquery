@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Events</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+        integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .mouseEvents {
+            height: 100px;
+            /* width: 100px; */
+            background-color: violet;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+
+        $(document).ready(() => {
+            // $('.hide').click(()=>{
+            //     $('p').hide();
+            // });
+            // $('.hide2').click(()=>{
+            //     $('p').show();
+            // });
+
+            // $('.hide').dblclick(()=>{
+            //     $('p').hide();
+            // });
+
+            // $('.mouseEvents').mouseenter(()=>{
+            //     $('p').hide();
+            // });
+            // $('.mouseEvents').mouseleave(()=>{
+            //     $('p').show();
+            // });
+
+
+            // $('.mouseEvents').hover(()=>{
+            //     $('p').hide();
+            // },
+            // ()=>{
+            //     $('p').show();
+            // });
+
+            // $('.mouseEvents').on({
+
+            //     click: ()=>{
+            //         $('.mouseEvents').css('background-color','tomato');
+            //     },
+            //     mouseenter: ()=>{
+            //         $('p').hide()
+            //     },
+            //     mouseleave: ()=>{
+            //         $('.mouseEvents').css('background-color', 'silk')
+            //     }
+
+            // })
+
+
+
+            // Hide and Show with time
+
+            // $('#hide').click(()=>{
+            //     $('.text').hide(1000)
+            // })
+
+            // $('#show').click(()=>{
+            //     $('.text').show(1000)
+            // })
+
+
+
+            // fadeIn and fadeOut with time
+
+            // $('#hide').click(()=>{
+            //     $('.text').fadeOut(1000)
+            // })
+
+            // $('#show').click(()=>{
+            //     $('.text').fadeIn(1000)
+            // })
+
+
+
+            // toogle 
+
+            // $('.hide2').click(() => {
+            //     $('.text').toggle('slow')
+            // })
+
+            // fade with opacity
+
+            // $('.hide2').click(() => {
+            //     $('.text').fadeTo(1000, 0.5)
+            // })
+
+            // fade toogle
+
+            // $('.hide2').click(() => {
+            //     $('.text').fadeToggle(1000)
+            // })
+
+
+
+            // slide functions
+
+            // $('.hide').click(() => {
+            //     $('.text').slideUp(1000)
+            // })
+
+
+            // $('.show').click(() => {
+            //     $('.text').slideDown(1000)
+            // })
+
+
+            // $('.hide2').click(() => {
+            //     $('.text').slideToggle(1000)
+            // })
+
+
+
+            // animation and stop functions
+
+
+            // $('.hide2').click(() => {
+            //     $('.mouseEvents').animate({
+            //         width: '300px',
+            //         height: '400px',
+            //         borderWidth: '20px',
+            //     },1000)
+            // })
+
+            // $('.hide').click(() => {
+            //     $('.mouseEvents').stop()
+            // })
+
+
+
+            // Callback function in Jquery methods
+
+            // $('.hide').click(()=>{
+            //     $('.mouseEvents').hide(3000,()=>{
+            //         alert('your box is hidden')
+            //     })
+            // })
+
+            // method chaining in Jquery
+
+
+            // $('.hide').click(()=>{
+            //     $('.text').css('color','violet').slideUp(2000)
+            // })
+
+
+
+
+
+
+        });
+
+
+
+    </script>
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+
+    <h2>Lorem ipsum dolor sit.</h2>
+
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, iste.</p n>
+
+    <button class="hide" id="hide">Hide</button>
+    <button class="show" id="show">Show</button>
+    <button class="hide2">Hide me!</button>
+
+    <div class="mouseEvents"></div>
+
+
+
+</body>
+
+</html>
